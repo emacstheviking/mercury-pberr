@@ -1,11 +1,19 @@
 %-----------------------------------------------------------------------------%
 %
 % File: pberr.m
-% Main author: 
+% Main author: emacstheviking <objitsu@gmail.com>
 % Date: Tue Mar  1 21:15:59 2022
 %
 %
+% This merges the output from the Mercury compilers '.err' files into the 
+% currently open file in Nano. If no corresponding error file exists then
+% nothing happens. Otherwise the contents of that file are interleaved into
+% the buffer as comments, at the relevant positions. Coupled with a custom
+% nano colouring file and it all feels nice and cosy.
 %
+% Thanks to Paul Bone for the inspiration...and, as it turns out, some FIFTEEN
+% years earlier writing a very similar program which I have no learned about
+% during the course of this exercise! LMAO You couldn't make it up!
 %-----------------------------------------------------------------------------%
 :- module pberr.
 
