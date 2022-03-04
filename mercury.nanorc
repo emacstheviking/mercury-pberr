@@ -1,5 +1,3 @@
-## Here is a prolog example.
-
 syntax "mercury" "\.m$"
 comment "%"
 
