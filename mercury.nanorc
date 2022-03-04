@@ -1,0 +1,45 @@
+## Here is a prolog example.
+
+syntax "mercury" "\.m$"
+comment "%"
+
+## Written in Mercury for Nano+Mercury, this will interleave
+## a FOO.err file when called from FOO.m via Meta-F (formatter)
+formatter /Users/sean/Documents/code/mercury/pberr/pberr nanoformatter
+
+# Reset everything
+#color normal ".*"
+
+# Integers and floats
+color yellow "(^| |=)[0-9]+\.?[0-9]*"
+
+# Variables
+color magenta "(^|[[:blank:]]|\(|,)[A-Z_!][a-zA-Z0-9_\.]*($|[[:blank:]]|,|\))"
+
+# Anonymous variable '_'
+color yellow "(^|[[:blank:]]|\(|,)_($|[[:blank:]]|,|\))"
+
+# Functions
+color cyan "(^|[[:blank:]])\w+\("
+color cyan "\(|\)|\[|\]|,|=|\\="
+
+# Atoms
+#color red "(^|[[:blank:]])|[a-zA-Z0-9_]*($|[[:blank:]]|,|\))"
+
+# Comments
+color green "(^|[[:blank:]])%.*$"
+
+# Strings
+color yellow "\".*\""
+
+# compiler :-
+color cyan "^:- .*$"
+
+# custom errors for pberr
+color red "^%E.*$"
+
+# Reminders
+color yellow "(BUG|DEBUG|FIXME|IDEA|NOTE|REVIEW|TEMP|TODO|WARNING|XXX|TOFU)"
+
+# Spaces in front of tabs
+color ,red " +	+"
