@@ -26,7 +26,7 @@ but I use Makefile for everything most of the time with Mercury. Actually, my fi
 
 It can be found here:
 
-  [GitHub: mcnew](https://github.com/emacstheviking/mcnew){target="_blank"}
+  [GitHub: mcnew](https://github.com/emacstheviking/mcnew)
 
 
 **NOTE** For me, make install places it into $HOME/bin, if that's not right for
