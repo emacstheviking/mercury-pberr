@@ -12,7 +12,7 @@
 % nano colouring file and it all feels nice and cosy.
 %
 % Thanks to Paul Bone for the inspiration...and, as it turns out, some FIFTEEN
-% years earlier writing a very similar program which I have no learned about
+% years earlier writing a very similar program which I have now learned about
 % during the course of this exercise! LMAO You couldn't make it up!
 %-----------------------------------------------------------------------------%
 :- module pberr.
