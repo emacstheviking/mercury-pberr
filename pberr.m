@@ -202,7 +202,8 @@ put_back_errors([ E | Es ], Map, I, O, !IO) :-
                 (pred(Line::in, !.IO::di, !:IO::uo) is det :-
                     io.format(O, "%%E%s\n", [s(Line)], !IO)
                 ),
-                Strings, !IO
+                list.reverse(Strings),
+                !IO
             ),
 
             io.format(O, "%%E\n", [], !IO)
