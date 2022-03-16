@@ -58,10 +58,10 @@ Invoke the formatter with M-F (Esc F) and it should, if configured correctly, ex
 
         ( if
     %E
-    %E 000237    warning: variable `Inits' occurs only once in this scope.
     %E 000237  In clause for predicate `ck_felt'/7:
     %E 000237    warning: variable `Inits' occurs only once in this scope.
     %E 000237  In clause for predicate `ck_felt'/7:
+    %E 000237    warning: variable `Inits' occurs only once in this scope.
     %E
             Args = [ sexp(_, Inits), HaltCond, _Step | Body]
         then
